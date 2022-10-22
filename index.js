@@ -6,3 +6,4 @@
 
 
 
+let input = document.getElementById("input-box")
