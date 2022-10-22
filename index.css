@@ -28,29 +28,28 @@ h1 {
     color: #FFFFFF;
      
 }
-#input-box{
+input {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    background-color: inherit;
     
     width: 117px;
     height: 83px;
     border: 2px solid #B295FF;
     border-radius: 5px;
-    
-}
-#converter p {
-    margin-bottom: 34px;
     font-weight: 800;
     font-size: 58px;
     
     color: #FFFFFF;
 }
 
+
 button {
+    margin-top: 26.77px;
     width: 117px;
     height: 42px;
     background: #FFFFFF;

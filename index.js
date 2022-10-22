@@ -7,3 +7,16 @@
 
 
 let input = document.getElementById("input-box")
+let lenght = document.getElementById("length-conv")
+let volume = document.getElementById("volume-conv")
+let mass = document.getElementById("mass-conv")
+
+const convBtn = document.getElementById("conv-btn")
+
+convBtn.addEventListener("click", function(){
+console.log("clicked")
+
+
+
+})
+
