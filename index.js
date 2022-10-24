@@ -10,14 +10,17 @@ let input = document.getElementById("input-box").value
 let lenght = document.getElementById("length-conv")
 let volume = document.getElementById("volume-conv")
 let mass = document.getElementById("mass-conv")
-
 const convBtn = document.getElementById("conv-btn")
 
-convBtn.addEventListener("click", function(){
+convBtn.addEventListener("click", function(a, b){
 
-lenght.innerHTML = `meters =  feet |  feet =  meters`;
-volume.innerHTML = ` liters =  gallons |  gallons =  liters`;
-mass.innerHTML = ` kilos =  pounds |  pounds =  kilos`;
+let conversionLenght = Math.floor(input.value * 3.281)
+let conversionVolume = Math.floor(input.value * 0.264)
+let conversionMass = Math.floor(input.value * 2.204)
+
+lenght.innerHTML = `${input.value} meters =  feet | ${input.value} feet = ${conversionLenght} meters`
+volume.innerHTML = `${input.value} liters =  gallons | ${input.value}  gallons = ${conversionVolume} liters`
+mass.innerHTML = `${input.value} kilos =  pounds | ${input.value}  pounds = ${conversionMass} kilos`
 
 
 
