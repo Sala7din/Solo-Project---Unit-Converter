@@ -6,7 +6,7 @@
 
 
 
-let input = document.getElementById("input-box")
+let input = document.getElementById("input-box").value
 let lenght = document.getElementById("length-conv")
 let volume = document.getElementById("volume-conv")
 let mass = document.getElementById("mass-conv")
@@ -14,9 +14,14 @@ let mass = document.getElementById("mass-conv")
 const convBtn = document.getElementById("conv-btn")
 
 convBtn.addEventListener("click", function(){
-console.log("clicked")
+
+lenght.innerHTML = `meters =  feet |  feet =  meters`;
+volume.innerHTML = ` liters =  gallons |  gallons =  liters`;
+mass.innerHTML = ` kilos =  pounds |  pounds =  kilos`;
 
 
 
-})
+
+
+});
 
