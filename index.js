@@ -6,21 +6,27 @@
 
 
 
-let input = document.getElementById("input-box").value
+
 let lenght = document.getElementById("length-conv")
 let volume = document.getElementById("volume-conv")
 let mass = document.getElementById("mass-conv")
 const convBtn = document.getElementById("conv-btn")
 
-convBtn.addEventListener("click", function(a, b){
+convBtn.addEventListener("click", function(){
 
-let conversionLenght = Math.floor(input.value * 3.281)
-let conversionVolume = Math.floor(input.value * 0.264)
-let conversionMass = Math.floor(input.value * 2.204)
+let input = document.getElementById("input-box").value
 
-lenght.innerHTML = `${input.value} meters =  feet | ${input.value} feet = ${conversionLenght} meters`
-volume.innerHTML = `${input.value} liters =  gallons | ${input.value}  gallons = ${conversionVolume} liters`
-mass.innerHTML = `${input.value} kilos =  pounds | ${input.value}  pounds = ${conversionMass} kilos`
+let MtoF = input * 3.281
+let LtoG = input * 0.264
+let KtoP = input * 2.204
+
+let FtoM = input / 3.281
+let GtoL = input / 0.264
+let PtoK = input / 2.204
+
+lenght.innerHTML = `${Number(input)} meters = ${Number(MtoF).toFixed(3)}  feet | ${Number(input)} feet = ${Number(FtoM).toFixed(3)} meters`
+volume.innerHTML = `${Number(input)} liters = ${Number(LtoG).toFixed(3)} gallons | ${Number(input)}  gallons = ${Number(GtoL).toFixed(3)} liters`
+mass.innerHTML = `${Number(input)} kilos = ${Number(KtoP).toFixed(3)} pounds | ${Number(input)}  pounds = ${Number(PtoK).toFixed(3)} kilos`
 
 
 
